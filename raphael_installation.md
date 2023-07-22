@@ -5,7 +5,7 @@ First time installation:
 - Now reboot into recovery to verify the installation
 - Sideload the latest [Android 11 firmware](https://xiaomifirmwareupdater.com/firmware/raphael/) of your device variant
 - Now tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage
-- Return to the main menu
+- Return to the main menu and reboot into recovery
 - Sideload the LineageOS .zip:
 On the device, select “Apply Update”, then “Apply from ADB” to begin sideload
 On the host machine, sideload the package using: `adb sideload filename.zip` or you can use an USB-OTG device
