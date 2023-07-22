@@ -1,7 +1,7 @@
 ## LineageOS 20.0 for K20 Pro/Mi 9T Pro Installation instructions
 First time installation:
 - Make sure you backup your data
-- Install recovery via fastboot (LineageOS recovery is recommended): `fastboot flash recovery filename.img`
+- Install LineageOS recovery via fastboot (or [OrangeFox](https://androidfilehost.com/?fid=4279422670115710816)): `fastboot flash recovery filename.img`
 - Now reboot into recovery to verify the installation
 - Sideload the latest [Android 11 firmware](https://xiaomifirmwareupdater.com/firmware/raphael/) of your device variant
 - Now tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage
