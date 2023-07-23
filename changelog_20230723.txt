@@ -1,0 +1,887 @@
+====================
+     07-23-2023
+====================
+
+   * android
+2266761 lineage: Remove no longer used symlinks
+
+   * device/xiaomi/raphael
+f4b1e53a raphael: Disable NFC service on Indian device variant
+c69f7722 init_raphael: Define ro.boot.hardware.sku and ro.boot.product.hardware.sku
+
+   * frameworks/base
+2908f852abaa frameworks/base: Support for third party NFC features and extensions
+5835ad32a493 core: Blacklist pixel system feature from Google Photos
+cacf794b50a4 PIHooks: Remove Google Photos feature blacklist
+128870854c50 PIHooks: Un-spoof GMS while adding google account
+c7315a3c2a24 PIHooks: Blacklist pixel features from Google Photos
+d3a2fda11607 PIHooks: Spoof Snapchat to Pixel XL
+974a5a1ec7a7 PIHooks: Spoof device as Pixel XL for Google Photos
+bbab0b8d6993 PIHooks: Make CTS/Play Integrity pass again
+8c5e979bd2bb PIHooks: Get package name from context instead of app
+7d69fcf92a25 PIHooks: Alter model name to avoid SafetyNet HW attestation
+e3febf38ef39 base: Introduce PropImitationHooks
+33194e11ec64 LocalImageResolver: Silence log debug spam
+3efb8ddfed1e libs: hwui: Properly silence the opengl swap failure logspam
+d2f2857a5e46 hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers
+d8f177e496d0 udfps: Trigger onFingerDown with regular action down events too
+bce835b2d659 udfps: Disable NightLight & ExtraDim on keyguard
+
+   * lineage/charter
+12b0b06 directors-working-agreement: Address inactivity
+
+   * lineage/hudson
+68a7e7e I honestly miss Moto Mods
+
+   * lineage/mirror
+c0558c4 Updated to 22-Jul-2023 15:44 UTC
+1564311 Updated to 22-Jul-2023 15:22 UTC
+
+   * lineage/wiki
+82e6e080 devices: Promote moto z2 force
+
+   * packages/apps/Jelly
+52ebd5c Jelly: New iconography
+080fdaa Jelly: utils: UiUtils: Fix nullable parameter
+03a0fd7 Jelly: Use relative activity names in manifest
+00b2010 Jelly: Set default_applicable_licenses
+254440e Jelly: New menu popup UI
+0358afc Jelly: M3
+bed0c55 Jelly: New URL bar
+0b77856 Jelly: Remove timestamp based history background color
+cb4c848 Jelly: Remove background from empty lists icon
+16c7e22 Jelly: Use AndroidX preference attributes
+50250a0 Jelly: Don't apply tints directly on icons drawables
+6279b63 Jelly: Nuke favicon based accent color change
+9e36adb Jelly: Use camel case for layout IDs
+cf858a5 Jelly: Use MaterialToolbar back button
+a8eb621 Jelly: Use lazy getters for views
+89b4391 Jelly: SettingsActivity: Use the new method for inflating fragments
+9c575e8 Jelly: SettingsActivity: Use better Kotlin syntax
+890567f Jelly: SettingsActivity: Rename settings fragment class
+8b22506 Jelly: MainActivity: Use better Kotlin syntax
+e6e43ab Jelly: MainActivity: Rename class attributes' names
+60938cc Jelly: webview: Use better Kotlin syntax
+941c9f2 Jelly: webview: Rename class attributes' names
+f45b733 Jelly: utils: Use better Kotlin syntax
+e8fe9ea Jelly: ui: Fix secure icon showing
+fccfaa8 Jelly: ui: Use better Kotlin syntax
+a5b0abc Jelly: ui: Rename class attributes' names
+8fee876 Jelly: suggestions: Fix typo
+8013db8 Jelly: suggestions: Use better Kotlin syntax
+c95c028 Jelly: suggestions: Rename class attributes' names
+e230efe Jelly: history: Use better Kotlin syntax
+804d9ab Jelly: history: Rename class attributes' names
+3a2c4b0 Jelly: favorite: Use better Kotlin syntax
+58228e9 Jelly: favorite: Rename class attributes' names
+00cd0f0 Jelly: ./gradlew generateBp
+842dd1b Jelly: Add generateBp from Aperture
+f3c66b6 Jelly: Move Android.bp to app/
+2143d07 Jelly: Migrate build scripts to Kotlin
+a16e1ef Jelly: Disable Jetifier
+d5346ef Jelly: Reformat code
+4e6711d Jelly: Use ?attr/isLightTheme
+5021feb Jelly: Rename app theme to Theme.Jelly
+e911801 Jelly: Move to SPDX license headers
+dd2db5f Jelly: Remove unused import
+2ee67c4 Jelly: Add newline at the end of files where needed
+7b617d3 Jelly: Get rid of wildcard imports
+2540f9a Jelly: Introduce NoSuggestionProvider
+e47c335 Jelly: Use ranges in suggestion provider
+
+   * packages/apps/Nfc
+59ea6cda NFC: Adding new vendor specific interface to NFC Service
+
+   * packages/apps/Updater
+c9edc90 Updater: Replace server and changelog url for unofficial builds
+
+   * scripts
+6fa38e1 build: Remove changelog_days
+32df55c Revert "build: Actually export changelog_days"
+4812e68 changelog: Generate file based on date
+
+   * system/core
+cbaced905 init: Don't spoof SafetyNet properties in recovery mode
+8778f161d init: Spoof build type & debuggable status
+68d3b0f9c init: Report valid verified boot for SafetyNet checks
+
+====================
+     07-22-2023
+====================
+
+====================
+     07-21-2023
+====================
+
+   * frameworks/base
+1c72405842ec SystemUI: Add FingerprintInteractiveToAuthProvider implementation
+68bb4d4aa245 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock"
+
+   * lineage-sdk
+1a53318a LineageSettingsProvider: Allow enabling lockscreen rotation by default
+
+   * lineage/mirror
+8b68087 Updated aosp-minimal to 21-Jul-2023 12:01 UTC
+
+   * packages/apps/Etar
+a8791d7f Update README.md
+c40eca14 AlertReceiver: Return early if either context or intent is null
+1507dfca Prompt user to add calendar instead of account
+6f1051a3 gradle clean should remove the generated libs
+689c6209 Update Gradle and dependencies (#1373)
+efef9833 UI Improvements (#1370)
+97056dd5 Update submodules
+8501b6b1 Catching all sync adapters at once instead of one by one (#1334)
+a0612241 Add URL field
+767b60f2 fix calendar and organizer text colors being barely visible sometimes
+86ed71da New version 1.0.34
+c2167e03 check event color is initialized before using it
+2589e45a Use USE_EXACT_ALARM permission
+
+====================
+     07-20-2023
+====================
+
+   * lineage/wiki
+a0c20b10 wiki: Make sure git lfs is configured/installed
+
+====================
+     07-19-2023
+====================
+
+   * frameworks/base
+a9ecc905565a Fix multi-user silent notifications on lockscreen
+
+====================
+     07-18-2023
+====================
+
+   * android
+8141fe3 manifest: Switch to our fork of system/netd
+
+   * frameworks/base
+cfd9c1e4c8ea Support per-UID VPN lockdown policy
+64cef56e1c68 Skip firewall rules for stopped users
+b83a568fa1d5 Use POLICY_REJECT_ALL instead of allowlist
+c05f2daa164c fixup! Implement firewall status bar indicator
+714095c893a9 NPMS: Check if UID is disallowed by transports
+5a0dc91a17ee Track and send allowed transports to Connectivity
+e91d98e3327a Do not consider transports for restricted mode
+c35569b439a3 SystemUI: Fix keyguard affordance colour in light theme
+01a12efd717c SystemUI: Check primitive vibration support in new quick affordances
+
+   * kernel/xiaomi/raphael
+a9530a26e151 Revert "nfc: nq-nci: Disable NFC for Indian devices"
+
+   * lineage/charter
+0586eac charter: Add sdcard requirements
+
+   * lineage/wiki
+df865408 wiki: Update MTG ATV gapps URL
+
+   * packages/apps/Settings
+784d330f91 Settings: Add missing icons in Network and Internet
+406607e0c1 POLICY_REJECT_ALL restricts all network access
+
+   * packages/apps/SetupWizard
+a5ba5df Hide navigation hint checkbox when taskbar is enabled
+eecf4a9 Fix PhoneMonitor crash on WiFi only devices
+
+   * packages/modules/Connectivity
+a13c5d638 TrafficStats: Silence log spam
+
+====================
+     07-17-2023
+====================
+
+   * android
+568c1f6 manifest: Track our hardware/broadcom/libbt
+
+   * hardware/broadcom/libbt
+4339350 correct WBS config VSC params
+9c7cdf2 libbt: configure audio codec right after firmware
+b29cdbe libbt: Add support for using two stop bits
+b537ade libbt: Add btlock support
+22affc6 libbt: Add prepatch support
+
+   * scripts
+e477c6b patches: Pick fwb and nfc changes
+
+====================
+     07-16-2023
+====================
+
+   * frameworks/base
+a2f21ee74418 Automatic translation import
+
+   * lineage-sdk
+ff85a963 Automatic translation import
+
+   * lineage/hudson
+65d9021 Regenerate device dependency mappings
+
+   * packages/apps/Aperture
+a95f7db Automatic translation import
+
+   * packages/apps/AudioFX
+7e3ddc8 Automatic translation import
+
+   * packages/apps/Backgrounds
+96dbad5 Automatic translation import
+
+   * packages/apps/DeskClock
+b0e92b755 Automatic translation import
+
+   * packages/apps/Dialer
+3c1f4d4dd Automatic translation import
+
+   * packages/apps/DocumentsUI
+99898c447 Automatic translation import
+
+   * packages/apps/Eleven
+0554bc8c Automatic translation import
+
+   * packages/apps/Etar
+1a40a98b Automatic translation import
+
+   * packages/apps/FlipFlap
+90c08c6 Automatic translation import
+
+   * packages/apps/Jelly
+ebd597e Automatic translation import
+
+   * packages/apps/LineageParts
+b1f4463 Automatic translation import
+
+   * packages/apps/Messaging
+5894eac Automatic translation import
+
+   * packages/apps/Profiles
+ea4533f Automatic translation import
+
+   * packages/apps/Recorder
+c867793 Automatic translation import
+
+   * packages/apps/Settings
+57da8e808b Automatic translation import
+
+   * packages/apps/SetupWizard
+66c117f Automatic translation import
+
+   * packages/apps/ThemePicker
+46308e3f Automatic translation import
+
+   * packages/apps/Trebuchet
+99e6daf816 Automatic translation import
+
+   * packages/apps/Updater
+5ff552f Automatic translation import
+
+   * packages/inputmethods/LatinIME
+02efcf88d Automatic translation import
+
+   * packages/providers/DownloadProvider
+70d7900a Automatic translation import
+
+   * packages/resources/devicesettings
+e329481 Automatic translation import
+
+   * vendor/crowdin
+670053a Automatic translation import
+
+   * vendor/qcom/opensource/fm-commonsys
+17c1bd1 Automatic translation import
+
+====================
+     07-15-2023
+====================
+
+   * android
+8a9be87 pixel: Use gs201 kernel for gs101 pixels
+
+   * device/qcom/sepolicy-legacy-um
+b1710c61 sdm660: Label 4.19 backlight node
+470d8edf sepolicy: Allow qti_init_shell to set proc_watermark_scale_factor.
+fc9b1c61 sepolicy: Guard debugfs rules
+5484e149 hal_usb_qti: Make legacy rules more aligned with QVA
+c2b70184 sepolicy: Label QTI USB HAL
+
+   * lineage/mirror
+d945232 Updated aosp-minimal to 15-Jul-2023 12:01 UTC
+
+   * packages/apps/Trebuchet
+9aade4ef0f LineageOS default workspace tablet changes
+
+   * vendor/lineage
+42695083 overlay: Set PixelXL as certified device
+17ef5474 vars: Use gs201 kernel for gs101 pixels
+35ef8795 vars: Update qcom tags
+
+====================
+     07-14-2023
+====================
+
+   * android
+f33b739 manifest: Track our development
+
+   * bionic
+e0aac7df6 Make tmpfile() respect $TMPDIR.
+4356de562 Fix mte build breakage.
+8571951d4 Fix stack use-after-scope in async_safe_log.
+
+   * development
+4b3ea0e91 make-key: Enforce PBEv1 password-protected signing keys
+
+   * device/lineage/atv
+0145917 fixup! atv: Restrict maximum ATV users to 2
+01c3384 atv: Restrict maximum ATV users to 2
+
+   * frameworks/base
+601c49c61f9e Merge tag 'android-13.0.0_r63' into staging/lineage-20.0_merge-android-13.0.0_r63
+016489022f81 Keyguard: Allow user configurable fingerprint wake-and-unlock
+
+   * lineage-sdk
+0c5c4f66 ChargingControl: Additional log lines for deadline
+2b59462a ChargingControl: Retry setting deadline if it fails
+3c3140b8 ChargingControl: Don't set deadline if charging control is not enabled
+1f36483a ChargingControl: Drop default values for initially zero variables
+1ed0e04d ChargingControl: Return early if lineage health HAL is not found
+63769995 Drop < lineage-16.0 database migration support
+7e5dade2 Change existing migrations to use new helper methods
+1c5a5dd0 Add helper methods for reading and writing settings
+
+   * lineage/hudson
+f1195e7 Regenerate device dependency mappings
+
+   * lineage/wiki
+3d9bd8f2 wiki: Show caprip builds were stopped
+
+   * packages/apps/Aperture
+c1472a0 Aperture: Simplify flash mode handling
+9e0a3f7 Aperture: CameraActivity: Get rid of update{PrimaryBar,CameraMode}Buttons()
+a1cad08 Aperture: Use the view model for views' rotation
+1a512eb Aperture: Introduce CameraViewModel
+
+   * packages/apps/Contacts
+37670b2e4 Contacts: Use Material You colors
+
+   * packages/apps/SetupWizard
+344e6b8 Add navigation settings step for secondary users
+7ad1585 Enable biometric and lockscreen steps for secondary users
+d4425ac Match Google wizard script flow
+
+   * vendor/lineage
+3a48abf1 vars: Pixel Fold
+
+====================
+     07-13-2023
+====================
+
+====================
+     07-12-2023
+====================
+
+   * build/make
+f09e7300a9 core: sysprop: Always use release-keys
+
+   * device/qcom/sepolicy
+7f9a2aeb Merge tag 'LA.QSSI.13.0.r1-10700-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-10700-qssi.0
+
+   * device/qcom/sepolicy-legacy-um
+28a05807 Merge tag 'LA.UM.11.2.1.r1-04100-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-04100-sdm660.0
+
+   * device/qcom/sepolicy_vndr
+f0b2ee6c Merge tag 'LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0
+
+   * device/qcom/sepolicy_vndr-legacy-um
+8550844d Revert "kona: update sepolicy for KineticsXR controller debug property"
+e81def90 Merge tag 'LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0
+
+   * hardware/qcom-caf/sdm660/audio
+b60e29407f Merge tag 'LA.UM.11.2.1.r1-04100-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-04100-sdm660.0
+
+   * hardware/qcom-caf/sm8250/media
+5f5421ed1 Merge tag 'LA.UM.9.12.r1-15500-SMxx50.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.12.r1-15500-SMxx50.QSSI13.0
+
+   * hardware/qcom-caf/sm8350/audio
+a4238620e7 Merge tag 'LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0
+
+   * hardware/qcom-caf/sm8350/media
+3c8b04177 Merge tag 'LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0
+
+   * hardware/qcom-caf/wlan
+097cb6b Merge tag 'LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0
+
+   * lineage-sdk
+663a948c Do not use transactions when reading settings
+173b6d86 Migrate side FPS settings
+
+   * lineage/hudson
+d798eb7 Regenerate device dependency mappings
+
+   * lineage/mirror
+d50dc09 Updated lineage-minimal to 12-Jul-2023 12:01 UTC
+
+   * scripts
+bd1a0b2 patches: init: Don't spoof SafetyNet properties in recovery mode
+
+   * vendor/codeaurora/telephony
+ebdb27e Merge tag 'LA.QSSI.13.0.r1-10700-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-10700-qssi.0
+
+   * vendor/qcom/opensource/audio-hal/st-hal
+7e8ea6f Merge tag 'LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0
+
+   * vendor/qcom/opensource/interfaces
+5fdc2ec Merge tag 'LA.QSSI.13.0.r1-10700-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-10700-qssi.0
+
+   * vendor/qcom/opensource/power
+115b194 Merge tag 'LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0
+
+   * vendor/qcom/opensource/usb
+c3a8bb4 Merge tag 'LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-22600-WAIPIO.QSSI14.0
+
+====================
+     07-11-2023
+====================
+
+   * android
+20afbdd pixel: Add felix support
+
+   * frameworks/base
+0a269dfeadce fixup! BatteryService: Add support for battery Moto Mods
+
+   * hardware/lineage/interfaces
+7da622a health: Only dump charging enabled status if toggle is supported
+83262c9 fixup! health: Wait for required paths indefinitely
+8fc7605 health: Only select node with RW permission
+38913d0 health: Check access() return value
+853ae10 health: Wait for required paths indefinitely
+
+   * lineage/wiki
+d3fc5f2a wiki: Run `sass-migrator.js division {}` on all scss files
+34e9cf61 wiki: Update all gems
+
+   * packages/apps/Messaging
+52eeac0 Messaging: Use Material You colors
+cc69b49 Messaging: Update checkmark PNG drawable with XML drawable
+
+   * packages/apps/Settings
+674154745a Settings: Show single-touch wakeup setting on rear & front fps devices
+d6d487d136 fixup! Hide SFPS wakeup setting when it's not supported
+
+   * packages/apps/Trebuchet
+23eefccba0 Merge tag 'android-13.0.0_r63' into staging/lineage-20.0_merge-android-13.0.0_r63
+
+   * packages/modules/Connectivity
+1fa42c038 Expose new isUidCurrentlyDisallowedByPolicy
+07c465641 Set allowed UIDs for networks based on policies
+117a99147 Allow VPN lockdown UID ranges to stack properly
+386950b4e Always drop non-VPN ingress in lockdown mode
+
+   * scripts
+acb7d7e build: Remove unused patches
+
+   * system/core
+25e7116ef fixup! healthd: Reinitialize mChargerNames for every battery update
+
+   * system/netd
+5c89ab94 Adjust IP rules to accommodate UID-based firewall
+2a59b392 Stop setting netId for bypassable VPNs
+
+   * vendor/lineage
+4768246a config: Allow overriding ro.support_one_handed_mode
+4a2439ac vars: July 2023 Security update
+
+====================
+     07-10-2023
+====================
+
+   * device/xiaomi/raphael
+8c7ceda2 raphael: overlay-lineage: Configure additional camera framerates
+f80045ed raphael: overlay-lineage: Aperture correct spacing
+3c61f6f9 raphael: Disallow aux cam usage for certain apps
+06f6cc9b raphael: Build Lineage Health HAL
+
+   * external/setupcompat
+9627624 Don't use card view on tablets/foldables
+
+   * lineage-sdk
+c407667d ChargingControl: Use ServiceManager.waitForDeclaredService()
+
+   * lineage/hudson
+6b0105f hudson: Add Nubia Z18 (nx606j)
+
+   * lineage/wiki
+344e10bd templates: recovery_install_amlogic_update: Retailor
+
+   * packages/apps/LineageParts
+5e85ebc LineageParts: Make sure wakelock is held before releasing it
+f06caa6 LineageParts: Remove unnecessary WakeLock::acquire() call
+
+   * scripts
+a47290d build: Actually export changelog_days
+b35f105 build: Generate 10 days of changelog
+1f982d4 patches: Sync android_build & vendor_lineage
+e55f2af build: Don't call changelog script - We will call it from rom source side
+ab6f63d ota: Rework script
+5edd261 ota: Reformat responses
+b6e4804 ota: Rename stuff according to LineageOS guideline
+f442509 ota: Remove unused entries
+867334f ota: ota -> OTA
+da17cbd ota: Initial file
+
+====================
+     07-09-2023
+====================
+
+   * build/soong
+61754f978 soong: increase heap size for metalava
+1c7ec3947 ui: Pass the exact CPU thread count to -j
+da3c2d7b7 Disable clang-tidy
+32f43e728 soong: Properly sort dumpvar additions
+
+   * lineage-sdk
+9ed93717 ChargingControl: No need to log a crash when not supported
+
+   * lineage/crowdin
+cdb398f crowdin: Update packages/apps/Updater strings.xml path
+
+   * lineage/wiki
+12172d98 wiki: devices: Add Nubia Z18 (nx606j)
+
+   * packages/apps/Updater
+185b5de Updater: Don't show delete twice
+613fbac Updater: Fix header margin
+c3093cb Updater: Align with Settings / Materialize
+bf1646f Updater: Handle NumberFormatException
+755560b Updater: Redo    * structure
+
+   * packages/modules/Wifi
+91251be304 Increase 5 GHz network signal tolerance
+409b68a80d wifi: resurrect mWifiLinkLayerStatsSupported counter
+
+   * scripts
+eb59b3d build: Call changelog script
+3e259fd build: Give patches.sh permissions
+9e4c050 changelog: Add message when changelog generation is completed
+02a904a changelog: Add copyrights
+664fcba changelog: Move changelog to vendor/OTA
+7b5ad67 changelog: Set device as raphael
+ee341b6 changelog: Hardcode out directory
+26779a8 changelog: vendor/crDroidOTA -> vendor/OTA
+0a34d0f Import changelog file from crDroid
+
+   * vendor/lineage
+0415cfd1 config: Let mini be really minimal
+
+====================
+     07-08-2023
+====================
+
+   * build/make
+cf5e4f7101 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61
+
+   * frameworks/av
+2a75cd6d2a Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61
+
+   * frameworks/base
+ff380f8605d9 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61
+
+   * lineage/mirror
+7d94ee5 Updated to 07-Jul-2023 12:56 UTC
+
+   * lineage/scripts
+14786f0 pixel: Handle googlesource 429s
+3951b65 pixel: Support wifi only devices
+
+   * lineage/wiki
+915bd699 devices: Correct onclite variants info
+
+   * packages/apps/Settings
+ed01619dff Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61
+
+   * packages/modules/Wifi
+8302866c2d Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61
+
+====================
+     07-07-2023
+====================
+
+====================
+     07-06-2023
+====================
+
+   * android
+b54282a pixel: Add tangorpro support
+434bed3 manifest: July 2023 Security update
+
+   * lineage/hudson
+97a757a hudson: Promote Redmi 7/Y3 to 20
+5018292 Disable caprip builds for now
+
+   * lineage/wiki
+fa214ad7 wiki: Add descending sort GET params to MTG AFH URL
+
+   * system/netd
+dbf5d679 Do not add VPN local exclusion rules
+
+   * vendor/lineage
+6e3be516 vars: Pixel Tablet
+
+====================
+     07-05-2023
+====================
+
+   * lineage/hudson
+06dd02d Regenerate device dependency mappings
+54296c2 Regenerate device dependency mappings
+
+====================
+     07-04-2023
+====================
+
+   * frameworks/base
+6cc26342a05a WiredAccessoryManager: Add support for DP audio
+
+   * lineage/mirror
+9d524c5 Updated to 03-Jul-2023 14:40 UTC
+
+   * lineage/wiki
+4b681a5c wiki: Promote Redmi 7/Y3 to 20
+
+====================
+     07-03-2023
+====================
+
+   * packages/apps/Aperture
+6aa5ea8 Aperture: Make the supported quality list an unordered map
+2d52dfb Aperture: Frame rates lists should be unordered sets
+957d8a2 Aperture: Framerate -> frame rate
+afc2753 Aperture: Dedup secondary top bar attributes into theme
+5f4883a Aperture: Update CameraX to 1.3.0-beta01
+
+====================
+     07-02-2023
+====================
+
+   * external/chromium-webview/patches
+f79c092 Update Chromium Webview to 114.0.5735.196
+
+   * external/chromium-webview/prebuilt/arm
+5ca4dde Update Chromium Webview arm prebuilt to 114.0.5735.196
+
+   * external/chromium-webview/prebuilt/arm64
+ac72070 Update Chromium Webview arm64 prebuilt to 114.0.5735.196
+
+   * external/chromium-webview/prebuilt/x86
+f3d12bc Update Chromium Webview x86 prebuilt to 114.0.5735.196
+
+   * external/chromium-webview/prebuilt/x86_64
+0824443 Update Chromium Webview x86_64 prebuilt to 114.0.5735.196
+
+   * frameworks/base
+a2909dad5af0 Automatic translation import
+
+   * lineage-sdk
+d487fb50 Automatic translation import
+
+   * lineage/wiki
+1c1464c8 wiki: devices: Add Galaxy F62/M62
+
+   * packages/apps/Aperture
+969993e Automatic translation import
+
+   * packages/apps/Backgrounds
+243e072 Automatic translation import
+
+   * packages/apps/Contacts
+514e66281 Automatic translation import
+
+   * packages/apps/DeskClock
+8eec88b75 Automatic translation import
+
+   * packages/apps/Dialer
+bcc6f18f0 Automatic translation import
+
+   * packages/apps/DocumentsUI
+bc1e6b907 Automatic translation import
+
+   * packages/apps/Eleven
+72ca7be1 Automatic translation import
+
+   * packages/apps/Etar
+4846cdb0 Automatic translation import
+
+   * packages/apps/Jelly
+0e706e4 Automatic translation import
+
+   * packages/apps/LineageParts
+92bab79 Automatic translation import
+
+   * packages/apps/Messaging
+832e397 Automatic translation import
+
+   * packages/apps/Profiles
+3f1faab Automatic translation import
+
+   * packages/apps/Recorder
+5bd0c9e Automatic translation import
+
+   * packages/apps/Settings
+c7f007a03b Automatic translation import
+
+   * packages/apps/SetupWizard
+aff7773 Automatic translation import
+
+   * packages/apps/ThemePicker
+16a5a3a7 Automatic translation import
+
+   * packages/apps/Trebuchet
+b4a700d96a Automatic translation import
+
+   * packages/apps/Updater
+ae11300 Automatic translation import
+
+   * packages/providers/DownloadProvider
+8b91542e Automatic translation import
+
+   * packages/resources/devicesettings
+1ae641b Automatic translation import
+
+   * vendor/qcom/opensource/fm-commonsys
+63e405c Automatic translation import
+
+====================
+     07-01-2023
+====================
+
+   * lineage/hudson
+b4e4c3e hudson: Add Galaxy F62/M62 (f62)
+
+   * lineage/scripts
+467bf43 build-webview: Update default webview to 114.0.5735.196
+
+   * lineage/wiki
+721f534a templates: Update aml-flash-tool install instructions
+
+   * system/vold
+2711bf7 vold: fix failing to format zero-ed out SD card
+
+====================
+     06-30-2023
+====================
+
+   * lineage/hudson
+094e8aa Regenerate device dependency mappings
+d8f49e4 First member of the Moto Bengal Clan
+6efe957 Say Hi to the Moto khaje clan
+
+   * lineage/mirror
+8725ba2 Updated to 29-Jun-2023 20:27 UTC
+
+   * lineage/wiki
+e3972a3f wiki: Add Motorola moto g30
+e61b6ff5 wiki: Add Motorola Moto g32/g42/g52
+
+====================
+     06-29-2023
+====================
+
+====================
+     06-28-2023
+====================
+
+   * lineage-sdk
+e6258aa7 ChargingControl: Handle cancel toggle correctly if bypass is not supported
+7f1c3b99 ChargingControl: Add cancel toggle for limit done notification
+9ada9b1b ChargingControl: Reset internal states on settings change
+c2dbc740 ChargingControl: Set a small margin for devices with bypass support
+
+   * lineage/mirror
+6679bc5 aosp-minimal: Pixel Fold
+
+====================
+     06-27-2023
+====================
+
+   * device/xiaomi/raphael
+8c95771f raphael: Adjust Nightlight color temperature values
+
+   * hardware/lineage/compat
+d67ae54 compat: Fix ABI issues
+
+   * lineage/mirror
+77527b5 Updated aosp-minimal to 27-Jun-2023 12:01 UTC
+
+   * scripts
+5c5ad63 build: Setup enviroment
+f1e6e97 patches: Pick updater patches
+d13fb3b patches: Do not pick the same patch twice
+
+====================
+     06-26-2023
+====================
+
+   * bootable/recovery
+3a726d50 recovery: Add support for touch rotation
+
+   * build/make
+180f369702 Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag
+
+   * device/lineage/sepolicy
+78d8426 common: Label ro.minui.default_touch_rotation
+
+   * frameworks/base
+86758596ed28 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager
+395bdd5546e6 SystemUI: Prevent NPE when checking for powerbutton FPS
+
+====================
+     06-25-2023
+====================
+
+   * device/xiaomi/raphael
+fc8f3fd6 Revert "raphael: Disable NFC service for Indian devices"
+
+   * lineage/wiki
+32120beb wiki: Add missing trailing slash in 'back to overview' link
+
+   * scripts
+3c6e01a build: Code cleanup
+ff87905 Fix cd path
+9562c2a Add two fwb patches
+bb9c731 Fix paths
+aa7991e Switch to full patches hash
+d80737b Add system core patches
+2ff5830 Connectivity: fix path
+a7e9cec Add wifi patches
+6719b9f Add connectivity patches
+b28efe6 Add settings patches
+a7a73ba Add frameworks_base patches
+d9b6117 Do not build Updater
+
+====================
+     06-24-2023
+====================
+
+   * lineage/mirror
+bc00c09 Updated aosp-minimal to 24-Jun-2023 12:01 UTC
+
+   * lineage/wiki
+9e26e34a wiki: Colorize `Path` variable in adb install steps for Windows
+
+   * packages/apps/ThemePicker
+b16dfcad ThemePicker: Fix crash choosing Live Wallpapers
+
+   * scripts
+ac6005e Add vendor_lineage patches
+e84db1c Temporarily do not pick any lineage-sdk patches
+3065e26 Add lineage-sdk patches
+f6d133f Add build_soong patches
+80b4285 Fixup path
+5138cb8 Create patches.sh
+620a59e build: Move ccache to setup function
+b3bdfbe Rewrite build script
+
+   * vendor/lineage
+322d62e1 fixup! config: Move IAntiFlicker to fqname
+
