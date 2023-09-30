@@ -1,0 +1,1000 @@
+====================
+     09-30-2023
+====================
+
+   * frameworks/base
+cc2113592110 AntiFlickerTile: Fix error in handleRefreshState
+0fcf90f41a80 Revert "udfps: Disable NightLight & ExtraDim on keyguard"
+22a631cc40a4 SystemUI: Add anti flicker tile
+26bbd7185141 frameworks/base: Support for third party NFC features and extensions
+78f84c8c7837 core: Blacklist pixel system feature from Google Photos
+ef3c97eb14ab PIHooks: Remove Google Photos feature blacklist
+f20a031f0ba4 PIHooks: Un-spoof GMS while adding google account
+6a3786881442 PIHooks: Blacklist pixel features from Google Photos
+c9c581decb57 PIHooks: Spoof Snapchat to Pixel XL
+e3d43eca5ff4 PIHooks: Spoof device as Pixel XL for Google Photos
+ec52c16ce972 PIHooks: Make CTS/Play Integrity pass again
+c56c19578d26 PIHooks: Get package name from context instead of app
+838caf0d677c PIHooks: Alter model name to avoid SafetyNet HW attestation
+43618c71a3f1 base: Introduce PropImitationHooks
+a73532395d91 LocalImageResolver: Silence log debug spam
+3b2efce81077 libs: hwui: Properly silence the opengl swap failure logspam
+31212ce287fa hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers
+dab7c61d11e3 udfps: Trigger onFingerDown with regular action down events too
+ed41eb1d317c udfps: Disable NightLight & ExtraDim on keyguard
+
+   * packages/apps/Nfc
+c97d45ed NFC: Adding new vendor specific interface to NFC Service
+
+   * system/core
+454e5ffe8 init: Don't spoof SafetyNet properties in recovery mode
+0093c8ea4 init: Spoof build type & debuggable status
+7aa95c2c9 init: Report valid verified boot for SafetyNet checks
+
+   * vendor/lineage
+c15e488c overlay: Set PixelXL as certified device
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+3c0a7c4 ipacm: Address ipacm start failure
+
+====================
+     09-29-2023
+====================
+
+   * hardware/lineage/interfaces
+6721624 gnss: properly terminate nmea-messages if they aren't already
+
+====================
+     09-28-2023
+====================
+
+   * lineage/mirror
+d9af665 Updated aosp-minimal to 27-Sep-2023 12:02 UTC
+
+====================
+     09-27-2023
+====================
+
+   * build/make
+a5c0b730bc core: sysprop: Always use release-keys
+
+   * packages/apps/Dialer
+f8781e650 fixup! Dialer: Style AudioRouteSelector
+2e6928fbe Dialer: Refactor FilteredNumbersUtil
+
+   * packages/apps/Settings
+295e137eb7 Settings: Add missing icons in Network and Internet
+
+   * vendor/lineage
+147545ac qcom: Add parrot platform
+
+====================
+     09-26-2023
+====================
+
+   * android
+a8a6ffb September 2023 Security update 2
+
+   * hardware/lineage/compat
+d549dba compat: Add GNSS interface type shim
+aea5a5f compat: Add libsensor -> libsensorndkbridge wrapper
+ac25b3e compat: libc: Convert to Android.bp
+ca8a756 compat: libc: Add pthread_mutex_destroy hack for camera
+ae85aa2 compat: libc: Trim down pthread_cond_timedwait hack
+5c6ed67 compat: libc: compile shim with GCC again..
+53e071b compat: libc: Specific naming of libc shim library
+33327b6 compat: libc: Bring libc hax inline with the latest sources
+3825e72 compat: libc: Transition to OSS libc shim
+
+   * vendor/lineage
+d8e9159e vars: September 2023 Security update 2
+
+====================
+     09-25-2023
+====================
+
+   * lineage/charter
+a5453bc charter: Make LineageOS Recovery the defacto solution
+d49c42a exemptions: Generizie LGE FDE
+
+   * lineage/hudson
+f452240 Regenerate device dependency mappings
+2f3ca59 hudson: Remove remaining `"lineage_recovery": true`
+
+   * packages/inputmethods/LatinIME
+c27689d5d fixup! LatinIME: Add option to always show the emoji key
+3c15ad302 fixup! LatinIME: Add number row option
+
+====================
+     09-24-2023
+====================
+
+   * lineage/hudson
+74aba39 Nothing to be found here
+
+   * lineage/wiki
+71e9fe7d wiki: Add Spacewar
+c7b6cc86 wiki: Don't index quirks in the search engines
+28ec88ea wiki: Exclude quirks from search
+
+====================
+     09-23-2023
+====================
+
+   * lineage/hudson
+4edea94 Regenerate device dependency mappings
+
+   * lineage/mirror
+204a2fb Updated aosp-minimal to 22-Sep-2023 12:01 UTC
+
+   * packages/apps/Contacts
+bce6851a2 Contacts: Restore action_bar_button_text_color
+
+   * packages/apps/Dialer
+79a0a82db Dialer: Fix SecurityException when receiving a call as secondary user
+
+====================
+     09-22-2023
+====================
+
+   * android
+b6600ff Track our own frameworks/opt/colorpicker
+
+   * build/make
+e7e855bed1 Merge tag 'android-13.0.0_r75' into staging/lineage-20.0_merge-android-13.0.0_r75
+
+   * frameworks/base
+def5583bc124 Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r75
+ef60e423b06c Merge tag 'android-13.0.0_r75' into staging/lineage-20.0_merge-android-13.0.0_r75
+
+   * lineage/hudson
+36e7e70 Regenerate device dependency mappings
+
+   * lineage/mirror
+9f68169 Updated to 21-Sep-2023 23:56 UTC
+9e1c55a Updated to 21-Sep-2023 12:01 UTC
+
+   * lineage/scripts
+db73755 pixel: Update README
+
+   * lineage/wiki
+f2112007 wiki: Fix quirks conditional on upgrade page
+
+   * packages/apps/Etar
+57183c30 Etar: Bump minSdk to 26
+0487a305 Etar: Rename package id in manifest
+059c7cf5 New version 1.0.36
+e21f7827 fixup! MonthByWeekFragment: Don't init loader in certain cases
+553d2c2f Use permission SCHEDULE_EXACT_ALARM instead of USE_EXACT_ALARM (#1363)
+121a90f8 fix Util.convertAllDay(Utc|Local)To(Local|Utc)
+cdc28fca further fixes for all-day events
+72f49323 remove erroneously committed debug message
+0cae0537 ensure begin and end are not used later
+6df987c6 rework and robustify treatment of all-day events
+2a4f5126 Application can't close system dialogs on 12 and above
+0c774fb4 MonthByWeekFragment: Don't init loader in certain cases
+
+   * packages/apps/Settings
+16d50cea64 Merge tag 'android-13.0.0_r75' into staging/lineage-20.0_merge-android-13.0.0_r75
+
+   * packages/apps/Trebuchet
+ba512fe145 Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge-android-13.0.0_r75
+a218020565 Merge tag 'android-13.0.0_r75' into staging/lineage-20.0_merge-android-13.0.0_r75
+
+   * packages/modules/Bluetooth
+dec408e09f Merge tag 'android-13.0.0_r75' into staging/lineage-20.0_merge-android-13.0.0_r75
+
+   * vendor/lineage
+181e5a2e apn: Add Mint Mobile
+ac06d5e1 vars: RIP sunfish
+
+   * vendor/qcom/opensource/audio-hal/st-hal-ar
+3e200da st-hal-ar: Guard on oss sthal flag
+
+====================
+     09-21-2023
+====================
+
+   * android
+b80192f Track our own fork for CVE-2023-4863
+
+   * build/soong
+2571ef08a soong: increase heap size for metalava
+0686e8c95 ui: Pass the exact CPU thread count to -j
+d9243bdad Disable clang-tidy
+
+   * frameworks/base
+acd73062553a PhoneWindowManager: Pass correct invocation type for assistant launch on home long press
+28152d898e34 SystemUI: Pass touch events to pulsing gesture listener only if dozing
+edb2e6376776 SystemUI: Move DT2S from PulsingGestureListener
+
+   * kernel/xiaomi/raphael
+c0ad285ece84 techpack: audio: Setup for inline build
+ad53847e1010 techpack: audio: Import Xiaomi changes
+893a34190f27 Revert "Revert "asoc : codec : enable usb analog headset support""
+fcb66a95731a Revert "techpack: audio: Import Xiaomi changes"
+640b05af7a21 Revert "techpack: audio: Squash fixes"
+f066b67bfda2 Revert "techpack: audio: Built-in all drivers"
+
+   * packages/apps/Aperture
+b80bc79 Aperture: Update CameraX to 1.4.0-alpha01
+
+   * packages/apps/Updater
+b0502b2 Updater: Replace server and changelog url for unofficial builds
+
+   * vendor/lineage
+0ddf65dc repopick: Fix regex related SyntaxWarning on Python 3.12
+
+====================
+     09-20-2023
+====================
+
+   * android
+0378bb6 Revert "lineage: Sync external/dwarves from AOSP"
+
+   * lineage/mirror
+f7a63b0 Updated aosp-minimal to 19-Sep-2023 12:01 UTC
+
+   * packages/inputmethods/LatinIME
+53e621bb7 LatinIME: Fix NPE when using a device with a physical keyboard
+
+   * vendor/lineage
+231338af kernel: Use pahole from Google prebuilts
+
+====================
+     09-19-2023
+====================
+
+   * external/webp
+161f49c Fix OOB write in BuildHuffmanTable.
+
+   * frameworks/opt/colorpicker
+9a5f228 Migrate to androidx
+
+   * frameworks/opt/timezonepicker
+51d7201 Migrate to androidx fragment library
+
+   * hardware/lineage/compat
+bfad08e compat: Add libcomparetf2 shim
+
+   * lineage/wiki
+56663065 wiki: Update MTG URLs
+
+   * packages/apps/Etar
+c976b307 Bump coroutines_version from 1.6.0 to 1.7.3
+619e3be0 New version 1.0.35
+85b52d95 gh#1264 interpret SelectedTime in app-specific home timezone
+42e9b8c0 external: Checkout submodules to use androidx too
+d12e2431 Migrate to androidx fragment library
+f35d2e78 ImportActivity: Treat start date as end date if latter is un-specified
+629813eb Add missing test dependencies (Closes: #1407)
+70b77044 add missing dependency in external copyAAR
+070d2bda point `external/calendar` submodule to `rebase` branch
+
+====================
+     09-18-2023
+====================
+
+   * lineage/hudson
+0753f4f Regenerate device dependency mappings
+
+   * lineage/mirror
+4e745a1 Updated to 17-Sep-2023 12:00 UTC
+
+   * lineage/wiki
+5bd86abb wiki: Add "unknown device"
+e3579836 templates: device_info: Make Quirks section only show if there are quirks
+78dac979 wiki: Introduce migration flag for codename migrations/unifications
+5546847d deivces: Migrate userdata unifications of legacy xperia to before_lineage_install
+
+   * packages/apps/Aperture
+6de5535 Aperture: Don't pass `repository` unnecessarily
+2edbe9a Aperture: Use composite action for running builds
+
+   * packages/apps/Dialer
+2ca9b68ca Dialer: Remove the remainder of DialerVariants
+e32f49317 Dialer: Fix in-call vibrations
+7aed2eb85 Dialer: Remove CallLocation
+2d6318b41 Dialer: (Re-)Move more resources
+e4b67c041 Dialer: Remove libshortcutbadger
+
+   * packages/apps/Etar
+2b298f83 Etar: Add soong_namespace for external modules
+
+   * packages/apps/Updater
+64261f1 Updater: Use generateBp plugin
+
+   * vendor/lineage
+2a0d4179 kernel: Allow to limit the used .dtb files for the final DTB image
+3056928d kernel: Include DTBOs from OEM/ODM folder in base DTB
+47931c12 kernel: Handle GKI modules
+
+====================
+     09-17-2023
+====================
+
+   * android
+fed3b28 Track our own fork(s) for 2023-09 ASB patching
+
+   * build/make
+88f03751cb Bump Security String to 2023-09-05
+
+   * external/chromium-webview/patches
+a4b0104 Update Chromium Webview to 117.0.5938.60
+
+   * external/chromium-webview/prebuilt/arm
+a80f484 Update Chromium Webview arm prebuilt to 117.0.5938.60
+
+   * external/chromium-webview/prebuilt/arm64
+f0bcd13 Update Chromium Webview arm64 prebuilt to 117.0.5938.60
+
+   * external/chromium-webview/prebuilt/x86
+1355d68 Update Chromium Webview x86 prebuilt to 117.0.5938.60
+
+   * external/chromium-webview/prebuilt/x86_64
+d44bdfd Update Chromium Webview x86_64 prebuilt to 117.0.5938.60
+
+   * frameworks/av
+eedaeee7b1 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9
+c5ede30f14 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * frameworks/base
+87052f701854 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9
+eb2f4d321960 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * frameworks/native
+2d384e9588 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9
+d99406e91f Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * lineage-sdk
+9e850826 trust: Fix variable usage before null check
+
+   * lineage/scripts
+23ef447 build-webview: Update default webview to 117.0.5938.60
+
+   * lineage/wiki
+7b263aac devices: us996*: Convert model identification note to before_install
+686cec58 wiki: Add "Known quirks" section
+
+   * packages/apps/Aperture
+45a6690 Aperture: Update ZXing to 3.5.2
+0a4c3a6 fixup: yaml
+e495da5 add workflow_dispatch event for gerrit hooks
+
+   * packages/apps/Nfc
+15cd9202 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Nfc into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/apps/Settings
+af9db16c85 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9
+9f776ebc68 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/apps/Trebuchet
+80cbcb4750 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9
+f1b03d523b Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/modules/Bluetooth
+bf9abb2349 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9
+0feb021bd6 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/modules/NeuralNetworks
+b839fd39b Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9
+04b483884 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/providers/MediaProvider
+4dc6b691d Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9
+77423b384 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * packages/services/Telephony
+544ea2dd2 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9
+2e0dfc989 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9
+
+   * vendor/qcom/opensource/power
+f16c47b power: Remove unused variable
+
+====================
+     09-16-2023
+====================
+
+   * frameworks/base
+3c3a7256c646 AutofillManager: Make userdebug default to NO_LOGGING
+
+   * lineage-sdk
+d84bdac8 Automatic translation import
+
+   * lineage/wiki
+4f94abae wiki: xiaomi: Asking for the latest MIUI or having the right FW?
+
+   * packages/apps/Aperture
+732a706 Aperture: Update workflows versions
+67078d0 Automatic translation import
+
+   * packages/apps/Dialer
+0eb502023 fixup! Dialer: Introduce asking for default dialer role
+b267f1554 Automatic translation import
+
+   * packages/apps/Eleven
+07207d00 Automatic translation import
+
+   * packages/apps/Etar
+6ec123ea Automatic translation import
+
+   * packages/apps/LineageParts
+53c4e9a Automatic translation import
+
+   * packages/apps/Updater
+5c17826 Automatic translation import
+
+   * packages/inputmethods/LatinIME
+a451d5201 Automatic translation import
+
+   * packages/resources/devicesettings
+4b27258 Automatic translation import
+
+   * vendor/crowdin
+8bce613 Automatic translation import
+
+   * vendor/lineage
+53760b51 overlay: Move config_hspa_data_distinguishable to proper location
+
+====================
+     09-15-2023
+====================
+
+   * device/lineage/sepolicy
+f568c2e common: Move in mediashell rules from ATV
+
+   * lineage/mirror
+92eb22e Updated aosp-minimal to 14-Sep-2023 12:02 UTC
+
+   * lineage/wiki
+5d6a9e47 schema: Include taro, cape and kalama
+
+   * packages/apps/Aperture
+79ee5da Aperture: Run ./gradlew app:generateBp
+7fccb00 Aperture: Use generateBp plugin from maven repo
+
+   * packages/apps/Jelly
+562bc91 Jelly: Run ./gradlew app:generateBp
+42c0087 Jelly: Use generateBp plugin from maven repo
+
+====================
+     09-14-2023
+====================
+
+   * lineage/mirror
+a8ee4bd Updated aosp-minimal to 13-Sep-2023 12:02 UTC
+
+   * lineage/wiki
+740926e6 wiki: Update steps for extracting payload based OTAs
+
+====================
+     09-13-2023
+====================
+
+   * packages/inputmethods/LatinIME
+68795e35b fixup! LatinIME: Make emoji key look like any other key
+
+====================
+     09-12-2023
+====================
+
+   * hardware/qcom-caf/sm8550/audio/agm
+a72154a agm: fixup!: OSS compile for plugins
+
+   * lineage/scripts
+a01711d aosp-merger: README: Fix typos
+
+   * lineage/wiki
+4014f1b6 wiki: 64-bit -> x86_64
+9321166b wiki: devices: Revive violet
+
+   * packages/apps/Aperture
+1bd3662 Aperture: Update CameraX maven repo URL
+5cd5058 Aperture: Detect uncommitted changes after running app:generateBp
+
+====================
+     09-11-2023
+====================
+
+   * lineage/wiki
+eaea8989 wiki: Add Wi-Fi device filter
+710a6d17 wiki: Update Sony nile peripherals
+
+====================
+     09-10-2023
+====================
+
+   * frameworks/base
+5cf8bcfdad8a core: pm: Allow wildcard in RRO system property value checks
+
+   * lineage/hudson
+05e08df add violet
+
+====================
+     09-09-2023
+====================
+
+   * lineage/wiki
+066b7840 wiki: Unify WiFi standard support
+
+====================
+     09-08-2023
+====================
+
+   * lineage/hudson
+d166b33 I asked a couple of Marlins for a favor, but they wouldn't help.
+
+   * lineage/scripts
+09efdf2 Drop update-payload-extractor
+
+   * lineage/wiki
+bc8bf070 devices: Promote the Pixel and Pixel XL
+
+   * packages/apps/Aperture
+9945a5d Aperture: Use Material You color on location dialog
+b07cf68 Aperture: Use Material You colors on QR bottom sheet
+45612be Aperture: Properly observe / remove observers from LiveDatas
+b41107f Aperture: Cleanup cameras parsing
+8f64c4d Aperture: New camera mode selector UI
+09a3389 Aperture: Move all the remaining views changes to livedata observers
+
+====================
+     09-07-2023
+====================
+
+   * hardware/qcom-caf/sm8450/audio/agm
+37b4130 agm: Fix OSS compile for plugins
+
+   * hardware/qcom-caf/sm8450/audio/pal
+faf5da46 pal: Update kvh2xml for current branch
+
+   * hardware/qcom-caf/sm8550/audio/agm
+ca7db6f Revert "agm: changes to enable session flush using sessionId"
+626a97d agm: Fix OSS compile for plugins
+
+   * hardware/qcom-caf/sm8550/audio/pal
+d22432bd pal: Complement kvh2xml header
+9a816119 pal: Update kvh2xml for current branch
+
+   * lineage/mirror
+8fb5ba7 Updated aosp-minimal to 06-Sep-2023 12:02 UTC
+
+   * lineage/wiki
+00e45dd8 Fixed incorrect camera specifications for apollon variants
+05d8e82e wiki: Correct Snapdragon 63x model names
+e9a6373c wiki: devices: {land,santoni}: Mention about migration to Mi8937
+dcd71476 wiki: miatoll: Add new maintainer
+
+====================
+     09-06-2023
+====================
+
+   * hardware/qcom-caf/sm8550/audio/agm
+e359fe0 agm: Infer ar error codes from utils
+fda02c3 Revert "plugins: disable modules on OSS builds that depend on proprietary headers"
+
+   * lineage/crowdin
+f5731f0 config: Remove non-existant Dialer sources
+
+   * lineage/hudson
+b96575e Regenerate device dependency mappings
+
+   * lineage/wiki
+4167d00a devices: moto-sdm660: Update maintainers
+
+   * packages/apps/Dialer
+bece9e80b Dialer: Provide stub FilteredNumberProvider
+
+   * vendor/lineage
+5a95d432 overlay: Do not overwrite default config_pluginAllowlist
+161e397e overlay: Treat org.lineageos.settings.device as privileged
+
+====================
+     09-05-2023
+====================
+
+   * build/soong
+703cc0911 [T-Only] Add android.hardware.power-V3-ndk to VndkMustUseVendorVariantList
+
+   * lineage/mirror
+ddb63fa Updated to 04-Sep-2023 16:54 UTC
+
+   * packages/apps/Dialer
+145b22ff5 Dialer: add proper-ish Direct Boot support
+f97aad06d Dialer: The big one (redesign)
+61aa419e6 Dialer: Lookup: Remove OpenCnam
+c8286f3d1 Dialer: Lookup: Fix Das Telefonbuch
+2061ebb1c Dialer: Remove some static java libraries
+73ee40fec Dialer: Modify CleanSpec
+928236e13 Dialer: Introduce asking for default dialer role
+4478438f4 Dialer: Redesign InCallUI
+be3c2d7e7 Dialer: Lookup: Remove Auskunft / PeopleLookup
+932abb416 Dialer: OpenStreetMap: It knows case-insensitivity now!
+28d23dd9b Dialer: Remove GoogleForwardLookup
+9332f6bbe Dialer: Add styling to Location permission dialog
+982ae3f7d Dialer: Only ask for location permissions if required
+668d57e2c Dialer: Fix NearbyPlaces Lookup
+cab14a492 Dialer: Align contacts tab with Messaging
+0d051e3af Dialer: Style AudioRouteSelector
+b67426944 Dialer: InCallUI: Show chosen audio text
+
+   * packages/inputmethods/LatinIME
+85980d549 LatinIME: Set navigation bar color to KB background
+91a45bb40 LatinIME: Add/update file licenses
+84d081e4d LatinIME: Add icons to settings items
+a24e6bbda LatinIME: Improve emoji category icons for day/night
+79c9a1f10 LatinIME: Drop custom v21 theme
+c5409cb3b LatinIME: Show back button when launching settings from keyboard
+b9206f00a LatinIME: Cause theme reload when dark mode has changed
+081edcdb9 LatinIME: Material You styling updates
+dd227b25b LatinIME: Update the number pad
+366648712 LatinIME: Give the spacebar a special treatment
+4bf503315 LatinIME: Style action popup buttons
+db2bb1c88 LatinIME: Material You theme fixes
+5afab31b7 LatinIME: Scroll emojis vertically
+a968342d7 LatinIME: Kill right alphabet key, replace it with delete in Emoji view
+ed34f1f57 LatinIME: Actually increase emoji page density
+2308ec747 LatinIME: Add option to always show the emoji key
+a480ba69d LatinIME: Update Material icons
+98562d100 LatinIME: Turn enter key back to an action key and style it
+4bde87579 LatinIME: Clean-up Material You definitions
+6cbf45193 LatinIME: Make long-press key hints configurable
+ddb048a14 LatinIME: Implement space bar cursor trackpad
+1b6290c5f LatinIME: Add number row option
+
+   * vendor/qcom/opensource/power
+f837662 power: update the AIDL client ver 3
+
+====================
+     09-04-2023
+====================
+
+   * packages/apps/Dialer
+5802c354b Dialer: Apply rounded edges to all AlertDialogs
+cbe5f4040 Dialer: Remove CommandLine [21/x]
+7fc7fce04 Dialer: Remove InstallIn annotation [20/x]
+7be7ccd4b Dialer: Remove more unused stuff [19/x]
+
+   * packages/apps/Messaging
+5628e20 Messaging: Set input text box background
+
+====================
+     09-03-2023
+====================
+
+   * lineage/hudson
+994273a Regenerate device dependency mappings
+
+   * lineage/wiki
+13cdc14a wiki: Add validation script to github workflow
+32ad33d5 wiki: Remove unused _data/devices/*.yml properties
+
+   * packages/apps/DeskClock
+7d0de3108 DeskClock: Enable backup
+
+   * packages/apps/Dialer
+ccbb30aab Dialer: Merge ConstantsImpl into Constants [18/x]
+9636e5591 Dialer: Remove Bindings [17/x]
+83d180ee6 Dialer: Remove EnrichedCall [16/x]
+73304857d Dialer: Remove remainder of DUO [15/x]
+2d7803344 Dialer: Remove unused Utilities [14/x]
+f21070e07 Dialer: Remove Bubble [13/x]
+a5329acb2 Dialer: Remove Logger and Spam Module [12/x]
+501a3da26 Dialer: Collapse manifests and remove duplicate permission [11/x]
+3a34df7be Dialer: Start converting to AndroidX [10/x]
+5c1526c47 Dialer: Remove NeededForTesting and VisibleForTesting [9/x]
+446e84a00 Dialer: Remove Transcription [8/x]
+acd664983 Dialer: Remove even more dead code [7/x]
+2f6a82970 Dialer: more possible cleanups [6/x]
+d7b593877 Dialer: set equal marginTop and Bottom (#16)
+bf47171d4 Dialer: Fix video call simulation
+987b0f201 Dialer: Use Material You theming for incallui dialpad
+12aa705f7 Dialer: Improve Material You design
+9a3c6bdda Dialer: Always use Material You gradient for incall UI
+95efabc50 Dialer: Apply Material you design
+b70c07a97 Dialer: Use dialer_theme_color as accent
+0eaedafce Dialer: Use Material You colors
+1e3233617 Dialer: Remove more targets [5/x]
+6b1cec6ec Dialer: Remove excluded code [4/x]
+73e7ca71f Dialer: Remove unused Fragments [3/x]
+a30f12cbe Dialer: Replace pngs with xml drawables [2/x]
+826405cf1 Dialer: Remove compatibility (1/x)
+8a41b1a23 Dialer: Redesign DisambigDialog
+b1ec3d398 Dialer: Don't show the same number twice
+cd2c1cffa Dialer: Show New Favorites
+e39fbce59 Dialer: A little bit of You
+
+====================
+     09-02-2023
+====================
+
+   * build/make
+7f178f3461 Make change and version bump to TQ3A.230901.001 Merge cherrypicks of ['googleplex-android-review.googlesource.com/24061434'] into tm-qpr3-release.
+8222442829 Update Security String to 2023-09-01
+
+   * frameworks/base
+9f6982c51e01 Automatic translation import
+0ddbc3bcc639 Merge cherrypicks of ['googleplex-android-review.googlesource.com/22791220', 'googleplex-android-review.googlesource.com/22569796', 'googleplex-android-review.googlesource.com/22670803', 'googleplex-android-review.googlesource.com/22901260', 'googleplex-android-review.googlesource.com/23053887', 'googleplex-android-review.googlesource.com/23054378', 'googleplex-android-review.googlesource.com/23103421', 'googleplex-android-review.googlesource.com/23048037', 'googleplex-android-review.googlesource.com/22733606', 'googleplex-android-review.googlesource.com/23428200', 'googleplex-android-review.googlesource.com/23479325', 'googleplex-android-review.googlesource.com/22912038', 'googleplex-android-review.googlesource.com/22915981', 'googleplex-android-review.googlesource.com/23511619'] into sparse-10750268-L94100000962880297. SPARSE_CHANGE: I7bc69ddf1c1742bd800eea4068ce268dfd96d0e3 SPARSE_CHANGE: Ib3240c0b5037a3a20692c83e2daa8cd858125ca7 SPARSE_CHANGE: Ibd6d9a8377e4b5327a473f8b9adf4e569e826172 SPARSE_CHANGE: Ie12843d00c5336e5a472624205e4e4b9ec881cc5 SPARSE_CHANGE: I98618477a828eb72b2173af6988e804471139e81 SPARSE_CHANGE: Ic7b1c4b40960fd04de9efbf4f6d7abee45c93025 SPARSE_CHANGE: Ib4eef40a0f59512c669b069532e55d36293f9e1c SPARSE_CHANGE: I62e829555c43136080ee4909f7dcf8c388165e9f SPARSE_CHANGE: I1c51c6f66cd6967651068de1ffc2e6e8566f5a46 SPARSE_CHANGE: I02ddaa5e823379510e9c81a8d803d5269e6d85ad SPARSE_CHANGE: If1c14cc0a4e3fbdfbed2c105d37ece9a866f18ed SPARSE_CHANGE: I35ba4652a125c8c83e18138f0fb0a51f3ef65b73 SPARSE_CHANGE: I2bfdc7801cec1b3aaa44f841d8a821214c6cb801 SPARSE_CHANGE: Ide3143558c906ab650e6a295e805adae81eff9bb
+79589458225b Fix weather complication disappearing after timer pause
+f99891ab19ff DO NOT MERGE Hide EmptyShadeView when on bouncer
+ba16c9f5ea88 DO NOT MERGE Adding tests for updated EmptyShadeView logic
+c92f1b5d636e USB: update logic for reporting playback and capture capability of USB devices.
+41aac56986d9 Remove ControlsProviderSelectorActivity finish on ControlsFavoritingActivity start
+73413a6a280b Prevent force showing system bars for TaskView
+bd8f1ec45655 Improve first opaque activity candidate detection
+a5cb005304ee Invalidate buffers on transform change
+b7c7fa1bcd85 Skip letterboxing if the activity below is embedded
+ff0f3a67e041 Unfreeze the surface when the transition is done
+e170ba1948db [RESTRICT AUTOMERGE] Always set last report configuration for starting window.
+6753977b851c Fix split cannot active if app trampoline launch new task
+7d0ee5b68477 Update the timing of clearing SplitRequest
+4d87e0418879 Gates RotationResolverService with a config flag
+292f896457b9 Merge cherrypicks of ['googleplex-android-review.googlesource.com/23474144', 'googleplex-android-review.googlesource.com/23476871', 'googleplex-android-review.googlesource.com/23733070', 'googleplex-android-review.googlesource.com/23905120', 'googleplex-android-review.googlesource.com/23834017'] into tm-qpr3-release.
+7486fa222559 Improve user handling when querying for resumable media
+623d8b53e6f0 Update AccountManagerService checkKeyIntentParceledCorrectly.
+338bae649cf9 Forbid granting access to NLSes with too-long component names
+8628f2f40812 Ignore virtual presentation windows - RESTRICT AUTOMERGE
+bc7744df5282 [DO NOT MERGE] Update quickshare intent rather than recreating
+
+   * lineage-sdk
+079c1313 Automatic translation import
+
+   * lineage/wiki
+e73c7ee0 wiki: Regen github pages workflow yaml
+
+   * packages/apps/Aperture
+017838d Automatic translation import
+
+   * packages/apps/Eleven
+ab73a427 Automatic translation import
+
+   * packages/apps/Etar
+3117270d Automatic translation import
+
+   * packages/apps/Jelly
+b619b4f Automatic translation import
+
+   * packages/apps/LineageParts
+7277996 Automatic translation import
+
+   * packages/apps/Recorder
+6dfe5ec Automatic translation import
+
+   * packages/apps/Settings
+bb9aaf059b Automatic translation import
+ef8022d471 Merge cherrypicks of ['googleplex-android-review.googlesource.com/23563580', 'googleplex-android-review.googlesource.com/23728493', 'googleplex-android-review.googlesource.com/23545218'] into tm-qpr3-release.
+f786095109 DO NOT MERGE: Prevent non-system IME from becoming device admin
+25d23b7d32 Settings: don't try to allow NLSes with too-long component names
+e478576fb4 Don't hide approved NLSes in Settings
+
+   * packages/apps/SetupWizard
+faf57f3 Automatic translation import
+
+   * packages/apps/Trebuchet
+1cf9d7d082 Merge cherrypicks of ['googleplex-android-review.googlesource.com/23543234', 'googleplex-android-review.googlesource.com/23554146'] into sparse-10750268-L94100000962880297. SPARSE_CHANGE: I835dd545a01eb2fd7990e0fd5ad51bac0e4b1f33 SPARSE_CHANGE: I2ee30dfa5e4170272b5353f270a69b38750a0bd5
+194a5249a5 Fixing syntax error due to java-version changes
+917af63799 Fixing icon cache thrashing due to an unsupported icon
+3d9a6af325 Merge cherrypicks of ['googleplex-android-review.googlesource.com/23566423'] into tm-qpr3-release.
+63b6ab6176 [RESTRICT AUTOMERGE] Fix permission issue in legacy shortcut
+
+   * packages/apps/Updater
+919a15e Automatic translation import
+
+   * packages/modules/Bluetooth
+26115431ba Merge cherrypicks of ['googleplex-android-review.googlesource.com/23186010', 'googleplex-android-review.googlesource.com/23152778', 'googleplex-android-review.googlesource.com/22726306', 'googleplex-android-review.googlesource.com/21609715', 'googleplex-android-review.googlesource.com/22581496'] into tm-qpr3-release.
+8aa8aaa1dc Fix UAF in gatt_cl.cc
+37bb6d6ebb Fix potential abort in btu_av_act.cc
+83072e7ea6 Fix integer overflow in build_read_multi_rsp
+29954462e6 Fix an integer overflow bug in avdt_msg_asmbl
+f91c35c5d8 Fix multiple OOB bugs resulted from tx mtu in EATT
+
+   * vendor/crowdin
+4b4de84 Automatic translation import
+
+   * vendor/lineage
+002d2146 sensitive_pn: Add website for AASRA, India
+
+====================
+     09-01-2023
+====================
+
+   * external/chromium-webview/prebuilt/arm
+29880cd Update Chromium Webview arm prebuilt to 116.0.5845.163
+
+   * external/chromium-webview/prebuilt/arm64
+87d6f10 Update Chromium Webview arm64 prebuilt to 116.0.5845.163
+
+   * external/chromium-webview/prebuilt/x86
+4b87f21 Update Chromium Webview x86 prebuilt to 116.0.5845.163
+
+   * external/chromium-webview/prebuilt/x86_64
+94af4d2 Update Chromium Webview x86_64 prebuilt to 116.0.5845.163
+
+   * lineage/hudson
+8f03fae Regenerate device dependency mappings
+ed1f90b Regenerate device dependency mappings
+
+   * lineage/mirror
+a9d5c15 Updated aosp-minimal to 31-Aug-2023 12:01 UTC
+
+   * lineage/scripts
+dd225e1 build-webview: Update default webview to 116.0.5845.163
+
+====================
+     08-31-2023
+====================
+
+   * external/chromium-webview/patches
+99fcf4d Update Chromium Webview to 116.0.5845.163
+
+====================
+     08-30-2023
+====================
+
+   * lineage/wiki
+4d9ac9a6 devices: lge8996: Format on upgrade (FDE)
+25547dc4 test/validate.rb: Switch to safe loading for YAML
+9af469ee devices: lge8996: State Charter exemption
+
+   * packages/inputmethods/LatinIME
+9ce05ec63 LatinIME: Make emoji key look like any other key
+e38a2495c LatinIME: Fix up line endings
+8529a39de Revert "LatinIME: show emoji key when language switch key is not showing"
+
+====================
+     08-29-2023
+====================
+
+   * build/make
+6ab7bbf752 [coastguard skipped] Merge sparse cherrypicks from sparse-10206733-L62800000962797378 into tm-qpr3-release.
+af30313041 Version bump to TQ3A.230805.001.Y1 [core/build_id.mk]
+
+   * frameworks/base
+53816cdb3313 SystemUI: fix missing rotate suggestion in 2 button nav mode
+4490e9e7d5a9 SystemUI: show ime switcher + cursor keys if we have space
+dea53c934ecb PhoneWindowManager: only handle long press on back key if using it
+8ca3cfb3f548 wm: fix APPEARANCE_LOW_PROFILE_BARS not working in non-fullscreen app
+
+   * hardware/qcom-caf/thermal
+377c718 thermal_hal: Update skin temperature threshold for lito
+
+   * packages/apps/DocumentsUI
+da156e6a3 fixup! DocumentsUI: add feature for adding shortcuts to launcher
+83c99ec1d DocumentsUI: fix crash in desktop/tablet mode when selecting files
+
+   * vendor/lineage
+3ade73b6 kernel: Support copying modules to recovery
+0d1608e3 kernel: Support Qualcomm merge_dtbs script
+
+   * vendor/qcom/opensource/power
+dbb7b13 power: Unbreak isModeSupported() for DOUBLE_TAP_TO_WAKE and LAUNCH
+
+====================
+     08-28-2023
+====================
+
+   * hardware/qcom-caf/sm8450/audio/agm
+25bb992 agm: Infer ar error codes from utils
+911622f Revert "plugins: disable modules on OSS builds that depend on proprietary headers"
+
+   * lineage/wiki
+2cb3e635 devices: Add 256 GB storage variant of Motorola G32
+
+   * vendor/qcom/opensource/commonsys-intf/display
+651ba2f1 gralloc: Fix custom content metadata region support
+
+====================
+     08-27-2023
+====================
+
+   * lineage/hudson
+d586a03 devices: Upadte nx65j to reflect new variant support
+
+   * lineage/wiki
+8ba09acd wiki: Add a glossary
+43810bfb wiki: dimensions: calculate size in [in] automatically
+ef7c5981 fixup! wiki: Validate dimensions
+f8b5b451 wiki: adding_device: List allowed technologies
+869d58db wiki: bugs: Mention specific What-not-to-do's
+5e525418 wiki: Disallow some additional properties
+1c3e638e wiki: Lineage -> LineageOS
+06a08b27 wiki: Mention Ubuntu LTS version in the build instructions
+f9aac06f wiki: Document jack-server quirk in build instructions
+2a835f2d wiki: Remove '.y.z' from Android firmware requirements
+817694a4 devices: nx65j: Split variants to add Red Magic 5G Lite
+c7d2ca47 wiki: Make format_on_upgrade accept branch version
+4d1ffb62 wiki: devices: add missing LED flash to ks01lte
+aa2c778e wiki: Move older gapps to separate page
+
+====================
+     08-26-2023
+====================
+
+   * android
+bc704ed lineage: Switch to our own fork of hardware/libhardware_legacy
+
+   * hardware/qcom-caf/sm8150/display
+9c4bbce5b4 sdm: hwc: Allow enabling doze mode support with a property
+
+   * hardware/qcom-caf/wlan
+4b250ac qcwcn: Address format compilation issues
+07cd5bf Merge tag 'LA.VENDOR.13.2.0.r1-16100-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan into HEAD
+
+   * lineage/hudson
+b9ea83a what a sweet surprise
+2e1c5dd Regenerate device dependency mappings
+
+   * lineage/wiki
+d70c9866 wiki: Add sweet
+
+====================
+     08-25-2023
+====================
+
+   * android
+3310fdc qcom: Remove sdm660 display group
+4e127cd qcom: Correct core-utils-vendor group
+712de94 qcom: Change healthd-ext group to reflect waipio-vendor base
+
+   * device/qcom/sepolicy_vndr
+11ec0178 sepolicy_vndr: Remove duplicate hwservice_contexts
+3f194878 sepolicy: Add mutualex as alias to vendor_qms back
+6239df2e sepolicy: Make qcc_vendor an alias for qcc_trd_2
+2cbeb839 sepolicy: Add neural network sepolicy back
+7a38ec04 Revert "Removal of CVP and Panorama services/SE files"
+c16ee107 Revert "Removal of SCVE Panorama services file"
+6dbea363 sepolicy: Remove new neverallows on vendor_xdsp_device and vendor_qdsp_device
+c4e7632c Revert "Remove rules for xtwifi-inet-agent as the daemon is removed"
+cff6e7f8 Revert "sepolicy_vndr: Remove sepolicy changes for eID services"
+47a7a5a9 Revert "sepolicy: remove agm service policy context"
+33224744 Revert "sepolicy: Remove unused sensors-qesdk binary name."
+7a6e6e85 Revert "QAPEService: Remove old perf_qesdk_client label"
+a68cfa05 Merge tag 'LA.VENDOR.13.2.0.r1-16100-KAILUA.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
+
+   * packages/apps/Aperture
+a75c7d4 Aperture: Update CameraX to 1.3.0-rc01
+dc35baf Aperture: Fix QR dialog actions scroll view
+a283250 Aperture: Remove unused resources and ids
+4666568 Aperture: Fix re-enabling microphone after video has started
+deb8766 Aperture: Update androidx.media3 to 1.1.1
+
+   * packages/apps/Updater
+5a212ca Updater: add support for local updates
+
+====================
+     08-24-2023
+====================
+
+   * device/qcom/sepolicy-legacy-um
+fd5f0ffc legacy: common: Label discard_max_bytes for SDB devices
+
+   * lineage/hudson
+5f24ce8 His younger brother was invited so we had to invite him
+7c8cb1d Regenerate device dependency mappings
+
+   * lineage/wiki
+bad025b8 devices: Import the moto z3
+
+====================
+     08-23-2023
+====================
+
+   * lineage/wiki
+ef22ccdb wiki: devices: Revive davinci
+
+   * vendor/lineage
+eb134f06 overlay: config_plugin{Whitelist -> Allowlist}
+
+====================
+     08-22-2023
+====================
+
+   * lineage/hudson
+a8fbf98 From Anchiano to Clos Lucé...
+
+   * lineage/wiki
+29dcb203 wiki: Fix networks/peripherals filters
+
+   * packages/apps/Contacts
+7413f264d Contacts: Don't display duplicate numbers
+
