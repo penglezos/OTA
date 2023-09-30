@@ -1,12 +1,12 @@
 {
     "response": [
       {
-        "datetime": 1692547925,
-        "filename": "lineage-20.0-20230820-UNOFFICIAL-raphael.zip",
-        "id": "aded86a2905549df622995010c7db9ddfe5d92af4eff46730f33601c1cbb8c73",
+        "datetime": 1696066780,
+        "filename": "lineage-20.0-20230930-UNOFFICIAL-raphael.zip",
+        "id": "b8e5fcdc30d0231ce176d8e53e0a5e4096907f2b2e82484cad49dceebb61ac8c",
         "romtype": "UNOFFICIAL",
         "size": 1181116006.4,
-        "url": "https://github.com/penglezos/device_xiaomi_raphael/releases/download/lineage-20.0-20230820-UNOFFICIAL-raphael/lineage-20.0-20230820-UNOFFICIAL-raphael.zip",
+        "url": "https://github.com/penglezos/device_xiaomi_raphael/releases/download/lineage-20.0-20230930-UNOFFICIAL-raphael/lineage-20.0-20230930-UNOFFICIAL-raphael.zip",
         "version": "20.0"
       }
     ]
